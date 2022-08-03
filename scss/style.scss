@@ -42,7 +42,7 @@
 	}
 }
 
-.popap {
+.popup {
     position: relative;
 
     &__input {
@@ -51,12 +51,12 @@
         height: 1px;
         overflow: hidden;
         clip: rect(0 0 0 0);
-        &:checked ~ .popap__body {
+        &:checked ~ .popup__body {
             opacity: 1;
             visibility: visible;
         }
-        &:focus + .popap__trigger,
-        &:hover + .popap__trigger {
+        &:focus + .popup__trigger,
+        &:hover + .popup__trigger {
             box-shadow: 0px 0px 0px 2px #A4C6FD;
         }
     }
@@ -129,16 +129,16 @@
         bottom: 0;
         left: 0;
         right: 0;
-        &:checked + .popap__btn {
+        &:checked + .popup__btn {
             background-color: transparent;
             &::after {
                 content: 'Even more from Kottans';
             }
         }
-        &:focus + .popap__btn {
+        &:focus + .popup__btn {
             box-shadow: 0px 0px 0px 2px #A4C6FD;
         }
-        &:checked ~ .popap__list {
+        &:checked ~ .popup__list {
             overflow: auto;
             height: 485px;         
         }
