@@ -94,6 +94,12 @@
         overflow: hidden;
     }
 
+    &__item {
+        &_hidden {
+            display: none;
+        }
+    }
+
     &__link {
         padding: 10px 0;
         display: grid;
@@ -141,6 +147,9 @@
         &:checked ~ .popup__list {
             overflow: auto;
             height: 485px;         
+        }
+        &:checked ~ .popup__list .popup__item_hidden{
+            display: block;        
         }
     }
 
